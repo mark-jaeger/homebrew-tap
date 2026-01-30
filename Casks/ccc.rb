@@ -14,22 +14,22 @@ cask "ccc" do
   on_macos do
     on_intel do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_darwin_amd64.tar.gz"
-      sha256 "78c140678b1baf4498cfb616eff05b9b17fcee8e5fe972aeed88eccacee589c0"
+      sha256 "b6cd6b34906a07b3e6f05c6d4681b3cdf7cdcf3f14b91f5c9f85e634b5e35215"
     end
     on_arm do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_darwin_arm64.tar.gz"
-      sha256 "c0dd74feb6762e24b8c2855192f0a60e30a20db9f62173a94770b8250655729c"
+      sha256 "7608acf2b91f61d31ea8a13ee7697f7fde700a5d3f2b14c99c4c9b154b4550fd"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_linux_amd64.tar.gz"
-      sha256 "39d540dbb653da6eccc05a9f8525dbe7a77b827ac41aaabf2d040582e177fccf"
+      sha256 "2d45ec60fe4c8ae5913d71f6d8f0ff96ea45d584aebdaaa35dfd87f161197520"
     end
     on_arm do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_linux_arm64.tar.gz"
-      sha256 "5ac791d2f1aa14d13ff95b1f952a887c874a8df201a04cacc5b1a4033ba95c09"
+      sha256 "c4e61c1683ec8bc46b4e53480acef007bc29ce89c158c7aa6caf359bec014fac"
     end
   end
 
