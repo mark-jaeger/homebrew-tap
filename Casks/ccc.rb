@@ -3,7 +3,7 @@ cask "ccc" do
   name "ccc"
   desc "CLI tool for managing tmux sessions on remote machines over SSH"
   homepage "https://github.com/mark-jaeger/ccc"
-  version "0.1.11"
+  version "0.1.12"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ccc" do
   on_macos do
     on_intel do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_darwin_amd64.tar.gz"
-      sha256 "f7a2bc944fe9dd6ba4b899f0c372c031c722e478da55f5b90285123541e527c9"
+      sha256 "3e4389b3e0937f1a62a82acf1b5d7b9a5e1a5b554f3b7cc85e91cfd26f0cc18a"
     end
     on_arm do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_darwin_arm64.tar.gz"
-      sha256 "e880915dbb518541fe03a88dd81326c7ce8ebc1a4b37d46a7e3c06f53b05357a"
+      sha256 "72cf9409c25e9bd5df94efa5b5e747f9830cdad77d0a132205cd3d357965d246"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_linux_amd64.tar.gz"
-      sha256 "361d5eab02f03edada94e5c5a08125e69eed9b5c596dcfebcbfd9915c3e35840"
+      sha256 "ea8c2c9531f782efc17096210030be26b6cc12a2eda9f2ef8f682df34a9cdbd6"
     end
     on_arm do
       url "https://github.com/mark-jaeger/ccc/releases/download/v#{version}/ccc_#{version}_linux_arm64.tar.gz"
-      sha256 "071a4dc8e6b2ddfdd86896f90b5ad4820207a5cff9e79f2e2a537ca80cfb4da8"
+      sha256 "14186c803841c1891bc30af4d21a97fb8b8a07fc1e99117cdf445911a32be2f1"
     end
   end
 
