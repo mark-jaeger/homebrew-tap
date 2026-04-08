@@ -5,21 +5,21 @@
 class Ccc < Formula
   desc "CLI tool for managing zmx sessions on remote machines over SSH"
   homepage "https://github.com/mark-jaeger/ccc"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.0/ccc_2.1.0_darwin_amd64.tar.gz"
-      sha256 "637e4fa59d797ca9c7586fc7e217a2d9e2974140a06494f830169c48a570fabe"
+      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.1/ccc_2.1.1_darwin_amd64.tar.gz"
+      sha256 "f921447248cb80732ed306c92a7b9779d7def8461b7de7218168cfb195d84179"
 
       define_method(:install) do
         bin.install "ccc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.0/ccc_2.1.0_darwin_arm64.tar.gz"
-      sha256 "cd77b6ee8716e6088b0c0a8b036ba3668999f3b298af8c02396ee1991c97f140"
+      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.1/ccc_2.1.1_darwin_arm64.tar.gz"
+      sha256 "28e9123c78af04c83360adf09df5735c611ac67bac9107e3b016bc1b2de71df6"
 
       define_method(:install) do
         bin.install "ccc"
@@ -29,15 +29,15 @@ class Ccc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.0/ccc_2.1.0_linux_amd64.tar.gz"
-      sha256 "ea7e0205e0bb8fcefbe6fd5cdcd637a34f3127ca45f0f6cf13f7d62f88c43fbf"
+      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.1/ccc_2.1.1_linux_amd64.tar.gz"
+      sha256 "65cf070224d5c962139d8ce7f2fc92cd68c9e52aa58b31743549a116056c1bb9"
       define_method(:install) do
         bin.install "ccc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.0/ccc_2.1.0_linux_arm64.tar.gz"
-      sha256 "417248839e4bc00d0744278277884c04c38ffa195a572bb3ab8d3c2d35f64db5"
+      url "https://github.com/mark-jaeger/ccc/releases/download/v2.1.1/ccc_2.1.1_linux_arm64.tar.gz"
+      sha256 "1e3de370b8efab972908f4b4179907cd4a86df70fd5dada0f3f53cea7ebbaf49"
       define_method(:install) do
         bin.install "ccc"
       end
